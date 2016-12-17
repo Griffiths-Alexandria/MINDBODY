@@ -9,8 +9,220 @@ and open the template in the editor.
         <title>MINDBODY Homework</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap & jQUERY -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|PT+Sans:700" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href='mindbodystylesheet.css'>
+        <link rel="stylesheet" href='buttons.css'>
+        <script src="js/mindbodyjs.js"></script>
+        <script src="js/form-validation.js"></script>
     </head>
-    <body>
-        <div>MINDBODY</div>
+
+    <body class='maincontent'>
+        <!-- NAV -->
+        <div class="mainnav">
+            <img src="assets/logo.png" alt="logo" class="logo">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#dashboard">Dashboard</a></li>
+                <li class="divider"><a data-toggle="tab" href="#signin">Sign In</a></li>
+                <li class="divider"><a data-toggle="tab" href="#classes">Classes</a></li>
+                <li class="divider"><a data-toggle="tab" href="#workshops">Workshops</a></li>
+                <li class="divider"><a data-toggle="tab" href="#appointments">Appointments</a></li>
+                <li class="divider"><a data-toggle="tab" href="#clienthome">Client Home</a></li>
+                <li class="divider"><a data-toggle="tab" href="#retail">Retail</a></li>
+            </ul>
+        </div>
+
+        <div>
+
+            <div class="tab-content">
+
+                <!-- Dashboard -->              
+                <div id="dashboard" class="tab-pane fade in active">
+                    <div class="subnav">
+                        <ul>
+                            <li><a data-toggle="tab" href="#subdash">Dashboard</a></li>
+                            <li><a data-toggle="tab" href="#businessoverview">Business Overview</a></li>
+                            <li><a data-toggle="tab" href="#schedule">Schedule</a></li>
+                            <li><a data-toggle="tab" href="#reports">Reports</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tabs">
+
+                        <div id="subdash" class="tab-pane fade">
+                            <p>Dashboard Home</p>
+                        </div>  
+
+                        <!-- Business Overview-->            
+
+                        <div id="businessoverview" class="tab-pane fade">
+                            <div class="col-md-3 addprog"> 
+
+                                <!-- Form Modal -->
+                                <button class="btn btn-primary btn-lg myButton" data-toggle="modal" data-target="#myModalNorm">
+                                    <img src="assets/plus_icon.png">
+                                </button>
+                                <p id="programbuttontitle">New Program</p>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
+                                     aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" 
+                                                        data-dismiss="modal">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    <span class="sr-only">Close</span>
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel">
+                                                    Add New Program
+                                                </h4>
+                                            </div>
+
+                                            <!-- Modal Body -->
+                                            <div class="modal-body">
+
+                                                <form id="addprogram">
+
+                                                    <div class="form-group col-md-12">
+                                                        <label for="programtypeselect" class="col-md-4">Program Type:</label>
+                                                        <div class="col-md-8">
+                                                            <select class="form-control" id="programtypeselect">
+                                                                <option>Count Series</option>
+                                                                <option>Time Series</option>
+                                                                <option>Membership</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group col-md-12">
+                                                        <label for="programname" class="col-md-4">Program Name:</label>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="form-control"
+                                                                   id="programname" placeholder="Program Name"/>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-check col-md-12">
+                                                        <label class="col-md-4">Allow online scheduling?</label>
+                                                        <label class="switch form-check-label col-md-8"> 
+
+                                                            <input type="checkbox" class="form-check-input" id="onlinesched">
+                                                            <div class="slider"></div>
+                                                        </label>
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-12">
+                                                        <label for="capacity" class="col-md-4">Default Capacity:</label>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="form-control"
+                                                                   id="capacity" placeholder="Default Capacity"/>
+                                                        </div>
+                                                    </div>                                                   
+
+                                                    <div class="form-check col-md-12">
+                                                        <label class="form-check-label col-md-4" for="tabselect">Add Program To:</label>
+                                                        <div class="col-md-8">
+                                                            <input type="checkbox" class="form-check-input checkbox-info"> Classes
+                                                            <input type="checkbox" class="form-check-input checkbox-info"> Appointments
+                                                            <input type="checkbox" class="form-check-input checkbox-info"> Workshops
+                                                            <br>
+                                                            <input type="checkbox" class="form-check-input checkbox-info"> Outside
+                                                            <input type="checkbox" class="form-check-input checkbox-info"> Inside
+                                                            <input type="checkbox" class="form-check-input checkbox-info"> Gym
+                                                        </div>
+
+                                                    </div>
+
+                                                    <br>
+                                                    <br>
+
+
+                                                    <button type="submit" class="btn btn-default" id="formbutton">Submit</button>
+                                                </form>
+
+
+                                            </div>
+
+                                            <!-- Modal Footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="col-md-4 newprogram">
+
+                                </div>
+                                <div class="col-md-4 newprogram">
+
+                                </div>
+                                <div class="col-md-4 newprograms">
+
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <!--empty content-->
+                            </div>
+                        </div>
+
+                        <div id="schedule" class="tab-pane fade">
+                            <p>Schedule</p>
+                        </div>
+
+                        <div id="reports" class="tab-pane fade">
+                            <p>Reports</p>
+                        </div>                    
+                    </div>    
+                </div>
+
+                <!-- Sign In -->                
+                <div id="signin" class="tab-pane fade">
+                    <h3>Sign In</h3>
+                </div>
+
+                <!-- Classes -->
+                <div id="classes" class="tab-pane fade">
+                    <h3>Classes</h3>
+                </div>
+
+                <!-- Workshops -->
+                <div id="workshops" class="tab-pane fade">
+                    <h3>Workshops</h3>
+                </div>
+
+                <!-- Appointments -->
+                <div id="appointments" class="tab-pane fade">
+                    <h3>Appointments</h3>
+                </div>
+
+                <!-- Client Home -->                
+                <div id="clienthome" class="tab-pane fade">
+                    <h3>Client Home</h3>
+                </div>
+
+                <!-- Retail -->
+                <div id="retail" class="tab-pane fade">
+                    <h3>Retail</h3>
+                </div>
+
+            </div>
+        </div>
     </body>
 </html>
