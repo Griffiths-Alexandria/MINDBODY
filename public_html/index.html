@@ -16,13 +16,13 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|PT+Sans:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Montserrat" rel="stylesheet">
 
         <!-- CSS -->
         <link rel="stylesheet" href='mindbodystylesheet.css'>
         <link rel="stylesheet" href='buttons.css'>
-        <script src="js/mindbodyjs.js"></script>
         <script src="js/form-validation.js"></script>
+        <script src="js/mindbodyjs.js"></script>
     </head>
 
     <body class='maincontent'>
@@ -63,12 +63,13 @@ and open the template in the editor.
                         <!-- Business Overview-->            
 
                         <div id="businessoverview" class="tab-pane fade">
-                            <div class="col-md-3 addprog"> 
+                            <div class="col-md-2 addprog"> 
 
                                 <!-- Form Modal -->
                                 <button class="btn btn-primary btn-lg myButton" data-toggle="modal" data-target="#myModalNorm">
                                     <img src="assets/plus_icon.png">
                                 </button>
+
                                 <p id="programbuttontitle">New Program</p>
 
                                 <!-- Modal -->
@@ -132,14 +133,14 @@ and open the template in the editor.
 
                                                     <div class="form-check col-md-12">
                                                         <label class="form-check-label col-md-4" for="tabselect">Add Program To:</label>
-                                                        <div class="col-md-8">
-                                                            <input type="checkbox" class="form-check-input checkbox-info"> Classes
-                                                            <input type="checkbox" class="form-check-input checkbox-info"> Appointments
-                                                            <input type="checkbox" class="form-check-input checkbox-info"> Workshops
+                                                        <div class="col-md-8 checkbox-info">
+                                                            <input type="checkbox" class="form-check-input"> Classes
+                                                            <input type="checkbox" class="form-check-input"> Appointments
+                                                            <input type="checkbox" class="form-check-input"> Workshops
                                                             <br>
-                                                            <input type="checkbox" class="form-check-input checkbox-info"> Outside
-                                                            <input type="checkbox" class="form-check-input checkbox-info"> Inside
-                                                            <input type="checkbox" class="form-check-input checkbox-info"> Gym
+                                                            <input type="checkbox" class="form-check-input"> Outside
+                                                            <input type="checkbox" class="form-check-input"> Inside
+                                                            <input type="checkbox" class="form-check-input"> Gym
                                                         </div>
 
                                                     </div>
@@ -166,19 +167,73 @@ and open the template in the editor.
                                 </div>
                             </div>
 
-                            <div class="col-md-8">
-                                <div class="col-md-4 newprogram">
+                            <div class="col-md-10">
 
+                                <div class="col-md-3 newprogram">
+                                    <div class="col-md-12">
+                                        <div class="col-md-9 titles">
+                                            Yoga Classes
+                                        </div>
+                                        <div class="col-md-3 editicon">
+                                            <button class="pencil"><img src="assets/pencil_icons.png" alt="pencil icon" class="pencil2"></button>                                        
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p>Sales by month</p>
+                                        <img src="assets/graph.png" class="graph">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <br>
+                                        <br>
+                                        total monthly sales $$ single line
+                                        <br>
+                                    </div>
+                                    <div class="col-md-12 hiddendiv">
+                                        <img src="assets/spark_lines.png" class="sparklines">
+                                    </div>
                                 </div>
-                                <div class="col-md-4 newprogram">
 
+                                <div class="col-md-3 newprogram">
+                                    <div class="col-md-12">
+                                        <div class="col-md-7 titles">
+                                            Yoga Classes
+                                        </div>
+                                        <div class="col-md-3 pencil">
+                                            ..pencil..
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p>Sales by month</p>
+                                        <img src="assets/graph.png" class="graph">
+                                    </div>
+                                    <div class="col-md-12">
+                                        total monthly sales $$ single line
+                                    </div>
+                                    <div class="col-md-12 hiddendiv">
+                                        <img src="assets/spark_lines.png" class="sparklines">
+                                    </div>
                                 </div>
-                                <div class="col-md-4 newprograms">
 
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <!--empty content-->
+                                <div class="col-md-3 newprogram">
+                                    <div class="col-md-12">
+                                        <div class="col-md-7 titles">
+                                            Yoga Classes
+                                        </div>
+                                        <div class="col-md-3 pencil">
+                                            ..pencil..
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p>Sales by month</p>
+                                        <img src="assets/graph.png" class="graph">
+                                    </div>
+                                    <div class="col-md-12">
+                                        total monthly sales $$ single line
+                                    </div>
+                                    <div class="col-md-12 hiddendiv">
+                                        <img src="assets/spark_lines.png" class="sparklines">
+                                    </div>
+                                </div>                                
                             </div>
                         </div>
 

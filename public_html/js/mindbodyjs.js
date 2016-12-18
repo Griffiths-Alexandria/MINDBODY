@@ -18,4 +18,3 @@ function activaTab(tab){
   $('.subnav a[href="#' + tab + '"]').tab('show');
 };
 
-

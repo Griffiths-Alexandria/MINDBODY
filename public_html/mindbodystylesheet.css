@@ -23,7 +23,7 @@
 
 /* BODY */
 .maincontent {
-    background-color: #DBDAD0;
+    background-color: #f3f2ed;
     /* background-repeat:no-repeat, repeat, repeat;
     background-size: 100%;
     background: -webkit-radial-gradient(bottom, #ffffff, #DBDAD0);
@@ -36,7 +36,7 @@
 /* NAV */
 .mainnav {
     background-color: #ebf7f3;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 } 
 
 .logo { 
@@ -71,9 +71,11 @@
     line-height: 1.42857143;
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0;
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .nav li a {
     position: relative;
@@ -83,6 +85,8 @@
     font-weight: 700;
     color: #89a99b;
     margin-right: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .nav-tabs li.active a, .nav-tabs li.active a:focus, .nav-tabs li.active a:hover {
@@ -95,6 +99,8 @@
     padding-top: 13px;
     margin-bottom: -3px;
     bottom: 3px;
+    padding-right: 25px;
+    padding-left: 25px;
     
 }
 
@@ -102,7 +108,7 @@
 .subnav {
     list-style-type: none;
     background-color: white;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 3px;
 }
 
@@ -123,7 +129,7 @@
     text-decoration: none;
     color: #8e8e8e;
     font-weight: 200; 
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .subnav ul li a:hover, .subnav ul li a:focus, .subnav ul li a:active{
@@ -131,17 +137,20 @@
     text-decoration: none;
     color: black;
     font-weight: 200; 
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* Business Overview */
 .addprog {
-    text-align: center;
+    text-align: right;
     padding-top: 20px;
+    padding-left: 90px;
 }
 
 #programbuttontitle {
     font-size: 11px;
+    line-height: 23px;
+    text-align: center;
 }
 
 .myButton {
@@ -194,6 +203,10 @@
     font-family: 'Noto Sans', sans-serif;
     color: #8e8e8e;
     
+}
+
+.modal-title {
+    text-align: center;
 }
 
 /* FORM */
@@ -258,3 +271,63 @@ input:checked + .slider:before {
     padding-top: 8px;
 }
 
+/* NEW PROGRAMS */
+
+.sparklines {
+    float: right;
+}
+
+.hiddendiv {
+   /* display: none; */
+}
+
+.titles {
+    padding-left: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    font-size: 17px;
+}
+
+.newprogram {
+    margin: 10px;
+    margin-top: 20px;
+    padding: 0px;
+    background-color: white;
+    border-radius: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 28%;
+    color: #8e8e8e;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.graph {
+    width: 100%;
+}
+
+/* Program Tables */
+.pencil {
+    margin-top: -19px;
+    margin-left: -4px;
+    background-color: white;
+}
+
+.editicon {
+    height: 22px;
+    overflow: hidden;
+    width: 22px;
+    margin-left: 25px;
+    border-radius: 2px;
+    padding-left: 0px;
+    border: 1px solid #f6f6f6;
+}
+
+.pencil2{
+    margin-bottom: 19px;
+    margin-left: -4px;
+}
+
+.pencil2:hover {
+    margin-left: -4px;
+    margin-top: 17px;
+}
