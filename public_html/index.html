@@ -20,8 +20,6 @@ and open the template in the editor.
 
         <!-- CSS -->
         <link rel="stylesheet" href='mindbodystylesheet.css'>
-        <link rel="stylesheet" href='buttons.css'>
-        <script src="js/form-validation.js"></script>
         <script src="js/mindbodyjs.js"></script>
     </head>
 
@@ -49,7 +47,7 @@ and open the template in the editor.
                     <div class="subnav">
                         <ul>
                             <li><a data-toggle="tab" href="#subdash">Dashboard</a></li>
-                            <li><a data-toggle="tab" href="#businessoverview">Business Overview</a></li>
+                            <li><a data-toggle="tab" href="#businessoverview" >Business Overview</a></li>
                             <li><a data-toggle="tab" href="#schedule">Schedule</a></li>
                             <li><a data-toggle="tab" href="#reports">Reports</a></li>
                         </ul>
@@ -64,7 +62,6 @@ and open the template in the editor.
 
                         <div id="businessoverview" class="tab-pane fade">
                             <div class="col-md-2 addprog"> 
-
                                 <!-- Form Modal -->
                                 <button class="btn btn-primary btn-lg myButton" data-toggle="modal" data-target="#myModalNorm">
                                     <img src="assets/plus_icon.png">
@@ -169,9 +166,10 @@ and open the template in the editor.
 
                             <div class="col-md-10">
 
+                                <!-- FIRST SECTION -->
                                 <div class="col-md-3 newprogram">
                                     <div class="col-md-12">
-                                        <div class="col-md-9 titles">
+                                        <div class="col-md-8 titles">
                                             Yoga Classes
                                         </div>
                                         <div class="col-md-3 editicon">
@@ -179,105 +177,252 @@ and open the template in the editor.
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <p>Sales by month</p>
+                                        <p class="salesbymonth">Sales by month</p>
                                         <img src="assets/graph.png" class="graph">
                                     </div>
-                                    <div class="col-md-12">
-                                        <br>
-                                        <br>
-                                        total monthly sales $$ single line
-                                        <br>
+                                    <div class="totalmonthlytable col-md-12">
+                                        <table class='monthlytable'>
+                                            <tr>
+                                                <th>Total Monthly</th>
+                                                <th>Current</th> 
+                                                <th>1-Year</th>
+                                            </tr>
+                                            <tr>
+                                                <td class='totalmonthlyid'>Sales</td>
+                                                <td class='currentamount'>$23,483</td> 
+                                                <td class='yearlines'><img src='assets/spark_line.png' alt='singleline'></td>
+                                            </tr>
+                                        </table>
                                     </div>
-                                    <div class="col-md-12 hiddendiv">
-                                        <img src="assets/spark_lines.png" class="sparklines">
+                                    <div class="col-md-12 pricenametable">
+                                        <button class="morebutton">more</button>
+                                        <div class="more">
+                                            <table class="pricenametable">
+                                                <tr>
+                                                    <th class="textcol">Price Name</th>
+                                                    <th class="currcol">Current</th>
+                                                    <th class="yearcol">1-Year</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Monthly Unlimited </td>
+                                                    <td>$4,260</td>
+                                                    <td rowspan="7"><img src="assets/spark_lines.png" class="sparklines"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Student 1 month</td>
+                                                    <td>$1,750</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Single Visit</td>
+                                                    <td>$560</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 class pass</td>
+                                                    <td>$475</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Student Single Pass</td>
+                                                    <td>$445</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20 class pass</td>
+                                                    <td>$230</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 class pass</td>
+                                                    <td>$520</td>
+                                                </tr>
+                                            </table>
+                                            <button class="lessbutton col-md-12">less</button>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- SECOND SECTION -->    
                                 <div class="col-md-3 newprogram">
                                     <div class="col-md-12">
-                                        <div class="col-md-7 titles">
-                                            Yoga Classes
+                                        <div class="col-md-8 titles">
+                                            Yoga Privates
                                         </div>
-                                        <div class="col-md-3 pencil">
-                                            ..pencil..
+                                        <div class="col-md-3 editicon">
+                                            <button class="pencil"><img src="assets/pencil_icons.png" alt="pencil icon" class="pencil2"></button>                                        
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <p>Sales by month</p>
+                                        <p class="salesbymonth">Sales by month</p>
                                         <img src="assets/graph.png" class="graph">
                                     </div>
-                                    <div class="col-md-12">
-                                        total monthly sales $$ single line
+                                    <div class="totalmonthlytable col-md-12">
+                                        <table class='monthlytable'>
+                                            <tr>
+                                                <th>Total Monthly</th>
+                                                <th>Current</th> 
+                                                <th>1-Year</th>
+                                            </tr>
+                                            <tr>
+                                                <td class='totalmonthlyid'>Sales</td>
+                                                <td class='currentamount'>$23,483</td> 
+                                                <td class='yearlines'><img src='assets/spark_line.png' alt='singleline'></td>
+                                            </tr>
+                                        </table>
                                     </div>
-                                    <div class="col-md-12 hiddendiv">
-                                        <img src="assets/spark_lines.png" class="sparklines">
+                                    <div class="col-md-12 pricenametable">
+                                        <button class="morebutton">more</button>
+                                        <div class="more">
+                                            <table class="pricenametable">
+                                                <tr>
+                                                    <th class="textcol">Price Name</th>
+                                                    <th class="currcol">Current</th>
+                                                    <th class="yearcol">1-Year</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Monthly Unlimited </td>
+                                                    <td>$4,260</td>
+                                                    <td rowspan="7"><img src="assets/spark_lines.png" class="sparklines"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Student 1 month</td>
+                                                    <td>$1,750</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Single Visit</td>
+                                                    <td>$560</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 class pass</td>
+                                                    <td>$475</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Student Single Pass</td>
+                                                    <td>$445</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20 class pass</td>
+                                                    <td>$230</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 class pass</td>
+                                                    <td>$520</td>
+                                                </tr>
+                                            </table>
+                                            <button class="lessbutton col-md-12">less</button>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- THIRD SECTION -->
                                 <div class="col-md-3 newprogram">
                                     <div class="col-md-12">
-                                        <div class="col-md-7 titles">
-                                            Yoga Classes
+                                        <div class="col-md-8 titles">
+                                            Yoga Duets
                                         </div>
-                                        <div class="col-md-3 pencil">
-                                            ..pencil..
+                                        <div class="col-md-3 editicon">
+                                            <button class="pencil"><img src="assets/pencil_icons.png" alt="pencil icon" class="pencil2"></button>                                        
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <p>Sales by month</p>
+                                        <p class="salesbymonth">Sales by month</p>
                                         <img src="assets/graph.png" class="graph">
                                     </div>
-                                    <div class="col-md-12">
-                                        total monthly sales $$ single line
+                                    <div class="totalmonthlytable col-md-12">
+                                        <table class='monthlytable'>
+                                            <tr>
+                                                <th>Total Monthly</th>
+                                                <th>Current</th> 
+                                                <th>1-Year</th>
+                                            </tr>
+                                            <tr>
+                                                <td class='totalmonthlyid'>Sales</td>
+                                                <td class='currentamount'>$23,483</td> 
+                                                <td class='yearlines'><img src='assets/spark_line.png' alt='singleline'></td>
+                                            </tr>
+                                        </table>
                                     </div>
-                                    <div class="col-md-12 hiddendiv">
-                                        <img src="assets/spark_lines.png" class="sparklines">
+                                    <div class="col-md-12 pricenametable">
+                                        <button class="morebutton">more</button>
+                                        <div class="more">
+                                            <table class="pricenametable">
+                                                <tr>
+                                                    <th class="textcol">Price Name</th>
+                                                    <th class="currcol">Current</th>
+                                                    <th class="yearcol">1-Year</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Monthly Unlimited </td>
+                                                    <td>$4,260</td>
+                                                    <td rowspan="7"><img src="assets/spark_lines.png" class="sparklines"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Student 1 month</td>
+                                                    <td>$1,750</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Single Visit</td>
+                                                    <td>$560</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 class pass</td>
+                                                    <td>$475</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Student Single Pass</td>
+                                                    <td>$445</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20 class pass</td>
+                                                    <td>$230</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 class pass</td>
+                                                    <td>$520</td>
+                                                </tr>
+                                            </table>
+                                            <button class="lessbutton col-md-12">less</button>
+                                        </div>
                                     </div>
-                                </div>                                
-                            </div>
+                                </div>
+
+                                <div id="schedule" class="tab-pane fade">
+                                    <p>Schedule</p>
+                                </div>
+
+                                <div id="reports" class="tab-pane fade">
+                                    <p>Reports</p>
+                                </div>                    
+                            </div>    
                         </div>
 
-                        <div id="schedule" class="tab-pane fade">
-                            <p>Schedule</p>
+                        <!-- Sign In -->                
+                        <div id="signin" class="tab-pane fade">
+                            <h3>Sign In</h3>
                         </div>
 
-                        <div id="reports" class="tab-pane fade">
-                            <p>Reports</p>
-                        </div>                    
-                    </div>    
-                </div>
+                        <!-- Classes -->
+                        <div id="classes" class="tab-pane fade">
+                            <h3>Classes</h3>
+                        </div>
 
-                <!-- Sign In -->                
-                <div id="signin" class="tab-pane fade">
-                    <h3>Sign In</h3>
-                </div>
+                        <!-- Workshops -->
+                        <div id="workshops" class="tab-pane fade">
+                            <h3>Workshops</h3>
+                        </div>
 
-                <!-- Classes -->
-                <div id="classes" class="tab-pane fade">
-                    <h3>Classes</h3>
-                </div>
+                        <!-- Appointments -->
+                        <div id="appointments" class="tab-pane fade">
+                            <h3>Appointments</h3>
+                        </div>
 
-                <!-- Workshops -->
-                <div id="workshops" class="tab-pane fade">
-                    <h3>Workshops</h3>
-                </div>
+                        <!-- Client Home -->                
+                        <div id="clienthome" class="tab-pane fade">
+                            <h3>Client Home</h3>
+                        </div>
 
-                <!-- Appointments -->
-                <div id="appointments" class="tab-pane fade">
-                    <h3>Appointments</h3>
-                </div>
+                        <!-- Retail -->
+                        <div id="retail" class="tab-pane fade">
+                            <h3>Retail</h3>
+                        </div>
 
-                <!-- Client Home -->                
-                <div id="clienthome" class="tab-pane fade">
-                    <h3>Client Home</h3>
+                    </div>
                 </div>
-
-                <!-- Retail -->
-                <div id="retail" class="tab-pane fade">
-                    <h3>Retail</h3>
-                </div>
-
-            </div>
-        </div>
-    </body>
-</html>
+                </body>
+                </html>
