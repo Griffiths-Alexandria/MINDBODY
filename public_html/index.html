@@ -97,7 +97,7 @@ and open the template in the editor.
                                                     <div class="form-group row">
                                                         <label for="programtypeselect" class="col-md-4">Program Type:</label>
                                                         <div class="col-md-8">
-                                                            <select class="form-control" id="programtypeselect">
+                                                            <select class="form-control" id="programtypeselect" required>
                                                                 <option>Count Series</option>
                                                                 <option>Time Series</option>
                                                                 <option>Membership</option>
@@ -111,7 +111,7 @@ and open the template in the editor.
                                                         <label for="programname" class="col-md-4">Program Name:</label>
                                                         <div class="col-md-8">
                                                             <input type="text" class="form-control"
-                                                                   id="programname" placeholder="Program Name"/>
+                                                                   id="programname" placeholder="Program Name" required/>
                                                         </div>
                                                     </div>
 
@@ -133,21 +133,28 @@ and open the template in the editor.
                                                         <label for="capacity" class="col-md-4">Default Capacity:</label>
                                                         <div class="col-md-8">
                                                             <input type="text" class="form-control"
-                                                                   id="capacity" placeholder="Default Capacity"/>
+                                                                   id="capacity" placeholder="Default Capacity" required/>
                                                         </div>
                                                     </div>                                                   
 
 
                                                     <div class="form-check row">
                                                         <label class="form-check-label col-md-4" for="tabselect">Add Program To:</label>
-                                                        <div class="col-md-8 checkbox-info">
+                                                        <div class="col-md-8 checkbox-info checkalign">
+                                                            <div class="col-md-5">
                                                             <input type="checkbox" class="form-check-input"> Classes
+                                                            <br>
                                                             <input type="checkbox" class="form-check-input"> Appointments
+                                                            </div>
+                                                            <div class="col-md-4">
                                                             <input type="checkbox" class="form-check-input"> Workshops
                                                             <br>
                                                             <input type="checkbox" class="form-check-input"> Outside
+                                                            </div>
+                                                                <div class="col-md-3">
                                                             <input type="checkbox" class="form-check-input"> Inside
                                                             <input type="checkbox" class="form-check-input"> Gym
+                                                                </div>
                                                         </div>
 
                                                     </div>
@@ -514,6 +521,7 @@ and open the template in the editor.
             </div>
         </div>
 
-
+        </div>
+   
     </body>
 </html>
