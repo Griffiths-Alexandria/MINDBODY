@@ -23,6 +23,8 @@
 /* BODY */
 .maincontent {
     background-color: #f3f2ed;
+    height: 1180px;
+
     /* background-repeat:no-repeat, repeat, repeat;
     background-size: 100%;
     background: -webkit-radial-gradient(bottom, #ffffff, #DBDAD0);
@@ -76,6 +78,27 @@
     padding-left: 25px;
     padding-right: 25px;
 }
+
+.nav-tabs li.active:before {
+    content: "\0020";
+    display: block;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 30px;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,.5);
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    -webkit-border-radius: 0;
+    -webkit-border-bottom-right-radius: 20px 50px;
+    -webkit-border-bottom-left-radius: 20px 50px;
+    -moz-border-radius: 0;
+    -moz-border-radius-bottomright: 20px 50px;
+    -moz-border-radius-bottomleft: 20px 50px;
+    border-radius: 0px;
+    border-bottom-right-radius: 20px 50px;
+    border-bottom-left-radius: 20px 50px;;
+}
+
 .nav li a {
     position: relative;
     display: block;
@@ -270,9 +293,9 @@ input:checked + .slider:before {
 /* NEW PROGRAMS */
 
 .titles {
-    padding-left: 0px;
-    padding-right:0px;
-    margin-right: 0px;
+    padding-left: 30px;
+    /* padding-right: 0px; */
+    /* margin-right: 0px; */
     font-family: 'Montserrat', sans-serif;
     color: #555;
     font-size: 16px;
@@ -282,30 +305,52 @@ input:checked + .slider:before {
     margin: 10px;
     margin-top: 20px;
     padding: 0px;
-    background-color: white;
-    border: 1px solid #f6f6f6;
     border-radius: 3px;
     padding-top: 15px;
     padding-bottom: 5px;
-    width: 25%;
+    width: 24%;
     color: #8e8e8e;
     font-family: 'Noto Sans', sans-serif;
-    background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 1px #d8d8d8;
+    background-color: white;
+    z-index: 1;
 } 
 
 
 .graph {
-    width: 100%;
     padding-bottom: 10px;
+    display: inline;
+    margin: 0 auto;
+    padding-left: 10px;
 }
 
+.pencilButton {
+    display: block;
+    width: 21px;
+    height: 20px;
+    background: url(assets/pencil_icons.png)bottom left;
+    text-indent: -99999px;
+    border: 1px solid #f6f6f6;
+    border-radius: 2px;
+}
+.pencilButton:hover {
+    background-position-x: 0;
+    background-position-y: 1px;
+}
+
+.pencil {
+    float: right;
+}
+
+/*
 .pencil {
     margin-top: -19px;
     margin-left: -4px;
     background-color: white;
 }
+
+
 
 .editicon {
     height: 22px;
@@ -326,18 +371,22 @@ input:checked + .slider:before {
     margin-left: -4px;
     margin-top: 17px;
 }
+*/
 
 .salesbymonth {
     font-size: 11px;
     color: #92927e;
     padding-top: 20px;
     margin-bottom: 0px;
+    padding-left: 15px;
 }
 
 /* Total Monthly Table */
 .totalmonthlytable {
+    /*
     padding-left: 0px;
     padding-right: 0px;
+    */
 }
 
 .monthlytable {
@@ -397,7 +446,8 @@ input:checked + .slider:before {
 .pricenametable {
     margin-top: 10px;
     table-layout: fixed;
-    width: 100%;
+    width: 90%;
+    margin-left: 15px;
 }
 
 .pricenametable td th {
@@ -421,10 +471,10 @@ input:checked + .slider:before {
     white-space: nowrap;
     overflow: hidden;
     font-size: 10px;
-    z-index: 1;
+    /* z-index: 1; */
     border-bottom: 1px solid #f6f6f6;
     position: relative;
-    line-height: 2;
+    line-height: 1.75;
 }
 
 .pricenametable tr td:nth-child(2) {
@@ -436,7 +486,7 @@ input:checked + .slider:before {
 }
 
 .pricenametable .textcol {
-    width: 80px;
+    width: 75px;
     font-size: 11px;
     padding-top: 5px;
 }
@@ -446,15 +496,16 @@ input:checked + .slider:before {
     white-space: nowrap;
     overflow: hidden;
     font-size: 10px;
-    z-index: 1;
+    /* z-index: 1;*/
     position: relative;
-    line-height: 2;
+    line-height: 1.75;
 }
 
 .pricenametable1 {
     margin-top: 10px;
     table-layout: fixed;
     width: 100%;
+    margin-left: 15px;
 }
 
 .pricenametable1 td th {
@@ -471,6 +522,7 @@ input:checked + .slider:before {
     font-weight: 100;
     padding-top: 10px;
     color: #d8d7d3;
+    width: 40px;
 }
 
 .pricenametable1 tr td:nth-child(2) {
@@ -478,48 +530,57 @@ input:checked + .slider:before {
 }
 
 .pricenametable1 tr th:nth-child(3) {
-    text-align: center;
+    text-align: left;
+    width: 70px;
+    padding-left: 25px;
 }
 
 .pricenametable1 .textcol {
-    width: 80px;
+    width: 55px;
     font-size: 11px;
     padding-top: 5px;
 }
 
-.lessbutton {
+.lessbutton, .lessbutton2, .lessbutton3 {
     border: none;
     background-color: white;
     text-align: left;
     padding-left: 0px;
     font-size: 10px;
     color:#d8d7d3;
+    margin-left: 15px;
 }
 
-.morebutton {
+.morebutton, .morebutton2, .morebutton3 {
     border: none;
     background-color: white;
     text-align: left;
-    padding-left: 0px;
+    padding-left: 15px;
     font-size: 10px;
     color: #d8d7d3;
 }
 
+.sparklines {
+    overflow: visible !important;
+} 
 
-.sparklines:before {
-   content: "";
-   position: absolute;
-   width: 65px;
-   height: 130px;
-   z-index: -100;
-   top: 0; 
-   background-image: url(https://raw.githubusercontent.com/MINDBODY-FEE/homework/master/assets/spark_lines.png);
+.sparklines:after {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 149px;
+    z-index: -100;
+    margin-left: 155px;
+    margin-top: 30px;
+    top: 0; 
+    background-image: url(https://raw.githubusercontent.com/MINDBODY-FEE/homework/master/assets/spark_lines.png);
+    background-repeat: no-repeat;
 }
 
 /* Bottom Table */
 .bottomtable {
-    width: 79%;
-    margin-left: 10px;
+    width: 74%;
+    margin-left: 26px;
 }
 
 .bottomtable tr th {
@@ -545,7 +606,7 @@ input:checked + .slider:before {
     font-size: 9px
 }
 
-.bottomtable .more2 {
+.bottomtable .moresub {
     font-family: 'Noto Sans', sans-serif;
     font-size: 10px;
     color: #92927e;
@@ -564,8 +625,9 @@ input:checked + .slider:before {
 .bottomtable tr td:nth-child(1) {
     padding-top: 20px;
 }
- 
+
 .bottomtable .visits {
     color: #555;
     font-size: 10px;
 }
+
