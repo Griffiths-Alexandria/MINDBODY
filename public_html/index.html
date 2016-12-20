@@ -93,134 +93,221 @@ and open the template in the editor.
 
                                                 <form id="addprogram">
 
-                                                    <div class="row">
-                                                        <div class="form-group col-md-12">
-                                                            <label for="programtypeselect" class="col-md-4">Program Type:</label>
-                                                            <div class="col-md-8">
-                                                                <select class="form-control" id="programtypeselect">
-                                                                    <option>Count Series</option>
-                                                                    <option>Time Series</option>
-                                                                    <option>Membership</option>
-                                                                </select>
-                                                            </div>
+
+                                                    <div class="form-group row">
+                                                        <label for="programtypeselect" class="col-md-4">Program Type:</label>
+                                                        <div class="col-md-8">
+                                                            <select class="form-control" id="programtypeselect">
+                                                                <option>Count Series</option>
+                                                                <option>Time Series</option>
+                                                                <option>Membership</option>
+                                                            </select>
                                                         </div>
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="form-group col-md-12">
-                                                            <label for="programname" class="col-md-4">Program Name:</label>
-                                                            <div class="col-md-8">
-                                                                <input type="text" class="form-control"
-                                                                       id="programname" placeholder="Program Name"/>
-                                                            </div>
+
+
+                                                    <div class="form-group row">
+                                                        <label for="programname" class="col-md-4">Program Name:</label>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="form-control"
+                                                                   id="programname" placeholder="Program Name"/>
                                                         </div>
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="form-check col-md-12">
-                                                            <label class="col-md-4">Allow online scheduling?</label>
-                                                            <label class="switch form-check-label col-md-8"> 
 
-                                                                <input type="checkbox" class="form-check-input" id="onlinesched">
-                                                                <div class="slider"></div>
-                                                            </label>
 
-                                                        </div>
+                                                    <div class="form-check row">
+                                                        <label class="col-md-4">Allow online scheduling?</label>
+                                                        <label class="switch form-check-label col-md-8"> 
+
+                                                            <input type="checkbox" class="form-check-input" id="onlinesched">
+                                                            <div class="slider"></div>
+                                                        </label>
+
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="form-group col-md-12">
-                                                            <label for="capacity" class="col-md-4">Default Capacity:</label>
-                                                            <div class="col-md-8">
-                                                                <input type="text" class="form-control"
-                                                                       id="capacity" placeholder="Default Capacity"/>
-                                                            </div>
-                                                        </div>                                                   
 
-                                                        <div class="row">
-                                                            <div class="form-check col-md-12">
-                                                                <label class="form-check-label col-md-4" for="tabselect">Add Program To:</label>
-                                                                <div class="col-md-8 checkbox-info">
-                                                                    <input type="checkbox" class="form-check-input"> Classes
-                                                                    <input type="checkbox" class="form-check-input"> Appointments
-                                                                    <input type="checkbox" class="form-check-input"> Workshops
-                                                                    <br>
-                                                                    <input type="checkbox" class="form-check-input"> Outside
-                                                                    <input type="checkbox" class="form-check-input"> Inside
-                                                                    <input type="checkbox" class="form-check-input"> Gym
-                                                                </div>
 
-                                                            </div>
+                                                    <div class="form-group row">
+                                                        <label for="capacity" class="col-md-4">Default Capacity:</label>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="form-control"
+                                                                   id="capacity" placeholder="Default Capacity"/>
                                                         </div>
-                                                        <br>
-                                                        <br>
+                                                    </div>                                                   
 
 
-                                                        <button type="submit" class="btn btn-default" id="formbutton">Submit</button>
+                                                    <div class="form-check row">
+                                                        <label class="form-check-label col-md-4" for="tabselect">Add Program To:</label>
+                                                        <div class="col-md-8 checkbox-info">
+                                                            <input type="checkbox" class="form-check-input"> Classes
+                                                            <input type="checkbox" class="form-check-input"> Appointments
+                                                            <input type="checkbox" class="form-check-input"> Workshops
+                                                            <br>
+                                                            <input type="checkbox" class="form-check-input"> Outside
+                                                            <input type="checkbox" class="form-check-input"> Inside
+                                                            <input type="checkbox" class="form-check-input"> Gym
+                                                        </div>
+
                                                     </div>
+
+                                                    <br>
+                                                    <br>
+
+
+                                                    <button type="submit" class="btn btn-default" id="formbutton">Submit</button>
 
                                                 </form>
 
 
-                                            </div>
 
-                                            <!-- Modal Footer -->
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default"
-                                                        data-dismiss="modal">
-                                                    Close
-                                                </button>
+
+
+                                                <!-- Modal Footer -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default"
+                                                            data-dismiss="modal">
+                                                        Close
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        
+                    
 
-                            <div class="col-md-10">
-                                <div class="row">
-                                    <!-- FIRST SECTION -->
+                        <div class="col-md-10">
+                            <div class="row">
+                                <!-- FIRST SECTION -->
 
-                                    <div class="col-md-3 newprogram">
+                                <div class="col-md-3 newprogram">
 
-                                        <div class="row">
-                                            <div class="col-md-8 titles">
-                                                Yoga Classes
-                                            </div>
-                                            <div class="col-md-3 pencil">
-                                                <a class="pencilButton" href="#"></a>                    
-                                            </div>
+                                    <div class="row">
+                                        <div class="col-md-8 titles">
+                                            Yoga Classes
                                         </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p class="salesbymonth">Sales by month</p>
-                                                <img src="assets/graph.png" class="graph">
-                                            </div>
+                                        <div class="col-md-3 pencil">
+                                            <a class="pencilButton" href="#"></a>                    
                                         </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="salesbymonth">Sales by month</p>
+                                            <img src="assets/graph.png" class="graph">
+                                        </div>
+                                    </div>
 
 
-                                        <div class="row">
-                                            <div class="totalmonthlytable col-md-12">
-                                                <table class='monthlytable'>
+                                    <div class="row">
+                                        <div class="totalmonthlytable col-md-12">
+                                            <table class='monthlytable'>
+                                                <tr>
+                                                    <th>Total Monthly</th>
+                                                    <th>Current</th> 
+                                                    <th>1-Year</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class='totalmonthlyid'>Sales</td>
+                                                    <td class='currentamount'>$23,483</td> 
+                                                    <td class='yearlines'><img src='assets/spark_line.png' alt='singleline'></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="morebutton">more</button>
+                                            <div style="display:none;" class="more">
+                                                <table class="pricenametable1">
                                                     <tr>
-                                                        <th>Total Monthly</th>
-                                                        <th>Current</th> 
-                                                        <th>1-Year</th>
+                                                        <th class="textcol">Price Name</th>
+                                                        <th class="currcol">Current</th>
+                                                        <th class="yearcol">1-Year</th>
                                                     </tr>
                                                     <tr>
-                                                        <td class='totalmonthlyid'>Sales</td>
-                                                        <td class='currentamount'>$23,483</td> 
-                                                        <td class='yearlines'><img src='assets/spark_line.png' alt='singleline'></td>
+                                                        <td>Monthly Unlimited </td>
+                                                        <td>$4,260</td>
+                                                        <td rowspan="7"><img src="assets/spark_lines.png" class="sparklines"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Student 1 month</td>
+                                                        <td>$1,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Single Visit</td>
+                                                        <td>$560</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10 class pass</td>
+                                                        <td>$475</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Student Single Pass</td>
+                                                        <td>$445</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20 class pass</td>
+                                                        <td>$230</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5 class pass</td>
+                                                        <td>$520</td>
                                                     </tr>
                                                 </table>
+                                                <button class="lessbutton col-md-10">less</button>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
 
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <button class="morebutton">more</button>
-                                                <div style="display:none;" class="more">
-                                                    <table class="pricenametable1">
+                                <!-- SECOND SECTION -->    
+                                <div class="col-md-3 newprogram">
+
+                                    <div class="row">
+                                        <div class="col-md-8 titles">
+                                            Yoga Privates
+                                        </div>
+                                        <div class="col-md-3 pencil">
+                                            <a class="pencilButton" href="#"></a>                    
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="salesbymonth">Sales by month</p>
+                                            <img src="assets/graph.png" class="graph">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="totalmonthlytable col-md-12">
+                                            <table class='monthlytable'>
+                                                <tr>
+                                                    <th>Total Monthly</th>
+                                                    <th>Current</th> 
+                                                    <th>1-Year</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class='totalmonthlyid'>Sales</td>
+                                                    <td class='currentamount'>$23,483</td> 
+                                                    <td class='yearlines'><img src='assets/spark_line.png' alt='singleline'></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="morebutton2">more</button>
+                                            <div style="display:none;" class="more2">
+                                                <div class="sparklines">
+                                                    <table class="pricenametable">
                                                         <tr>
                                                             <th class="textcol">Price Name</th>
                                                             <th class="currcol">Current</th>
@@ -229,287 +316,203 @@ and open the template in the editor.
                                                         <tr>
                                                             <td>Monthly Unlimited </td>
                                                             <td>$4,260</td>
-                                                            <td rowspan="7"><img src="assets/spark_lines.png" class="sparklines"></td>
+                                                            <td>&nbsp;</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Student 1 month</td>
                                                             <td>$1,750</td>
+                                                            <td>&nbsp;</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Single Visit</td>
                                                             <td>$560</td>
+                                                            <td>&nbsp;</td>
                                                         </tr>
                                                         <tr>
                                                             <td>10 class pass</td>
                                                             <td>$475</td>
+                                                            <td>&nbsp;</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Student Single Pass</td>
                                                             <td>$445</td>
+                                                            <td>&nbsp;</td>
                                                         </tr>
                                                         <tr>
                                                             <td>20 class pass</td>
                                                             <td>$230</td>
+                                                            <td>&nbsp;</td>
                                                         </tr>
                                                         <tr>
                                                             <td>5 class pass</td>
                                                             <td>$520</td>
+                                                            <td>&nbsp;</td>
                                                         </tr>
                                                     </table>
-                                                    <button class="lessbutton col-md-10">less</button>
                                                 </div>
+                                                <button class="lessbutton2 col-md-10">less</button>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- SECOND SECTION -->    
-                                    <div class="col-md-3 newprogram">
-
-                                        <div class="row">
-                                            <div class="col-md-8 titles">
-                                                Yoga Privates
-                                            </div>
-                                            <div class="col-md-3 pencil">
-                                                <a class="pencilButton" href="#"></a>                    
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p class="salesbymonth">Sales by month</p>
-                                                <img src="assets/graph.png" class="graph">
-                                            </div>
-                                        </div>
+                                </div>
 
 
-                                        <div class="row">
-                                            <div class="totalmonthlytable col-md-12">
-                                                <table class='monthlytable'>
-                                                    <tr>
-                                                        <th>Total Monthly</th>
-                                                        <th>Current</th> 
-                                                        <th>1-Year</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class='totalmonthlyid'>Sales</td>
-                                                        <td class='currentamount'>$23,483</td> 
-                                                        <td class='yearlines'><img src='assets/spark_line.png' alt='singleline'></td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
+                                <!-- THIRD SECTION -->
+                                <div class="col-md-3 newprogram">
 
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <button class="morebutton2">more</button>
-                                                <div style="display:none;" class="more2">
-                                                    <div class="sparklines">
-                                                        <table class="pricenametable">
-                                                            <tr>
-                                                                <th class="textcol">Price Name</th>
-                                                                <th class="currcol">Current</th>
-                                                                <th class="yearcol">1-Year</th>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Monthly Unlimited </td>
-                                                                <td>$4,260</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Student 1 month</td>
-                                                                <td>$1,750</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Single Visit</td>
-                                                                <td>$560</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>10 class pass</td>
-                                                                <td>$475</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Student Single Pass</td>
-                                                                <td>$445</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>20 class pass</td>
-                                                                <td>$230</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>5 class pass</td>
-                                                                <td>$520</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <button class="lessbutton2 col-md-10">less</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- THIRD SECTION -->
-                                    <div class="col-md-3 newprogram">
-
-                                        <div class="row">
-                                            <div class="col-md-8 titles">
-                                                Yoga Privates
-                                            </div>
-                                            <div class="col-md-3 pencil">
-                                                <a class="pencilButton" href="#"></a>                    
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p class="salesbymonth">Sales by month</p>
-                                                <img src="assets/graph.png" class="graph">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row">
-                                            <div class="totalmonthlytable col-md-12">
-                                                <table class='monthlytable'>
-                                                    <tr>
-                                                        <th>Total Monthly</th>
-                                                        <th>Current</th> 
-                                                        <th>1-Year</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class='totalmonthlyid'>Sales</td>
-                                                        <td class='currentamount'>$23,483</td> 
-                                                        <td class='yearlines'><img src='assets/spark_line.png' alt='singleline'></td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <button class="morebutton3">more</button>
-                                                <div style="display:none;" class="more3">
-                                                    <div class="sparklines">
-                                                        <table class="pricenametable">
-                                                            <tr>
-                                                                <th class="textcol">Price Name</th>
-                                                                <th class="currcol">Current</th>
-                                                                <th class="yearcol">1-Year</th>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Monthly Unlimited </td>
-                                                                <td>$4,260</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Student 1 month</td>
-                                                                <td>$1,750</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Single Visit</td>
-                                                                <td>$560</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>10 class pass</td>
-                                                                <td>$475</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Student Single Pass</td>
-                                                                <td>$445</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>20 class pass</td>
-                                                                <td>$230</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>5 class pass</td>
-                                                                <td>$520</td>
-                                                                <td>&nbsp;</td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <button class="lessbutton3 col-md-10">less</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- BOTTOM TABLE -->
                                     <div class="row">
-                                        <table class="bottomtable col-md-10">
-                                            <tr>
-                                                <th>All Programs</th>
-                                                <th>Monthly Sales</th>
-                                                <th>Monthly Attendance</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Open Practice <br> <span class="moresub">more</span></td>
-                                                <td>$572.00</td>
-                                                <td>276 <span class="visits">visits</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Yoga Videos <br> <span class="moresub">more</span></td>
-                                                <td>$391.00</td>
-                                                <td>82 <span class="visits">visits</span></td>
-                                            </tr>                                                                     
-                                        </table>
+                                        <div class="col-md-8 titles">
+                                            Yoga Privates
+                                        </div>
+                                        <div class="col-md-3 pencil">
+                                            <a class="pencilButton" href="#"></a>                    
+                                        </div>
                                     </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="salesbymonth">Sales by month</p>
+                                            <img src="assets/graph.png" class="graph">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="totalmonthlytable col-md-12">
+                                            <table class='monthlytable'>
+                                                <tr>
+                                                    <th>Total Monthly</th>
+                                                    <th>Current</th> 
+                                                    <th>1-Year</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class='totalmonthlyid'>Sales</td>
+                                                    <td class='currentamount'>$23,483</td> 
+                                                    <td class='yearlines'><img src='assets/spark_line.png' alt='singleline'></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="morebutton3">more</button>
+                                            <div style="display:none;" class="more3">
+                                                <div class="sparklines">
+                                                    <table class="pricenametable">
+                                                        <tr>
+                                                            <th class="textcol">Price Name</th>
+                                                            <th class="currcol">Current</th>
+                                                            <th class="yearcol">1-Year</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Monthly Unlimited </td>
+                                                            <td>$4,260</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Student 1 month</td>
+                                                            <td>$1,750</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Single Visit</td>
+                                                            <td>$560</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10 class pass</td>
+                                                            <td>$475</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Student Single Pass</td>
+                                                            <td>$445</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20 class pass</td>
+                                                            <td>$230</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5 class pass</td>
+                                                            <td>$520</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <button class="lessbutton3 col-md-10">less</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- BOTTOM TABLE -->
+                                <div class="row">
+                                    <table class="bottomtable col-md-10">
+                                        <tr>
+                                            <th>All Programs</th>
+                                            <th>Monthly Sales</th>
+                                            <th>Monthly Attendance</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Open Practice <br> <span class="moresub">more</span></td>
+                                            <td>$572.00</td>
+                                            <td>276 <span class="visits">visits</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yoga Videos <br> <span class="moresub">more</span></td>
+                                            <td>$391.00</td>
+                                            <td>82 <span class="visits">visits</span></td>
+                                        </tr>                                                                     
+                                    </table>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div id="schedule" class="tab-pane fade">
-                            <p>Schedule</p>
-                        </div>
+                    <div id="schedule" class="tab-pane fade">
+                        <p>Schedule</p>
+                    </div>
 
-                        <div id="reports" class="tab-pane fade">
-                            <p>Reports</p>
-                        </div>                    
-                    </div> 
-                </div>
-
-                <!-- Sign In -->                
-                <div id="signin" class="tab-pane fade">
-                    <h3>Sign In</h3>
-                </div>
-
-                <!-- Classes -->
-                <div id="classes" class="tab-pane fade">
-                    <h3>Classes</h3>
-                </div>
-
-                <!-- Workshops -->
-                <div id="workshops" class="tab-pane fade">
-                    <h3>Workshops</h3>
-                </div>
-
-                <!-- Appointments -->
-                <div id="appointments" class="tab-pane fade">
-                    <h3>Appointments</h3>
-                </div>
-
-                <!-- Client Home -->                
-                <div id="clienthome" class="tab-pane fade">
-                    <h3>Client Home</h3>
-                </div>
-
-                <!-- Retail -->
-                <div id="retail" class="tab-pane fade">
-                    <h3>Retail</h3>
-                </div>
+                    <div id="reports" class="tab-pane fade">
+                        <p>Reports</p>
+                    </div>                    
+                </div> 
             </div>
+
+            <!-- Sign In -->                
+            <div id="signin" class="tab-pane fade">
+                <h3>Sign In</h3>
+            </div>
+
+            <!-- Classes -->
+            <div id="classes" class="tab-pane fade">
+                <h3>Classes</h3>
+            </div>
+
+            <!-- Workshops -->
+            <div id="workshops" class="tab-pane fade">
+                <h3>Workshops</h3>
+            </div>
+
+            <!-- Appointments -->
+            <div id="appointments" class="tab-pane fade">
+                <h3>Appointments</h3>
+            </div>
+
+            <!-- Client Home -->                
+            <div id="clienthome" class="tab-pane fade">
+                <h3>Client Home</h3>
+            </div>
+
+            <!-- Retail -->
+            <div id="retail" class="tab-pane fade">
+                <h3>Retail</h3>
+            </div>
+        </div>
 
 
     </body>
