@@ -134,7 +134,7 @@
 .subnav ul li a:hover, .subnav ul li a:focus, .subnav ul li a:active, .subnav ul li.active a{
     font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #555;
     font-weight: 200; 
     font-size: 14px;
 }
@@ -329,7 +329,7 @@ input:checked + .slider:before {
 
 .salesbymonth {
     font-size: 11px;
-    color: #d8d7d3;
+    color: #92927e;
     padding-top: 20px;
     margin-bottom: 0px;
 }
@@ -360,29 +360,37 @@ input:checked + .slider:before {
 
 .monthlytable tr th:nth-child(1){
     width: 80px;
+    color: #8e8e8e;
+}
+
+.monthlytable tr th:nth-child(2){
+    width: 60px;
+    padding-left: 0px;
 }
 
 .monthlytable tr th:nth-child(3){
-    text-align: center;
-    padding-left: 0px;
+    width: 60px;
 } 
 
 .totalmonthlyid {
     padding-bottom: 0px;
     text-align: left;
     font-size: 11px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
     padding-left: 15px;
 }
 
 .currentamount {
     font-size: 11px;
     color: #555;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
+    text-align: left;
+    width: 60px;
 }
 
 .yearlines {
     padding-bottom: 10px;
+    text-align: left;
 }
 
 /* Price Name Table */
@@ -445,4 +453,26 @@ input:checked + .slider:before {
     padding-left: 0px;
     font-size: 10px;
     color: #d8d7d3;
+}
+
+
+/* Bottom Table */
+.bottomtable {
+    width: 79%;
+    margin-left: 10px;
+}
+
+.bottomtable tr th {
+    border-bottom: 1px solid lightgrey;
+    color: #92927e;
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 100;
+}
+
+.bottomtable tr th:nth-child(1) {
+    width: 100px;
+}
+
+.bottomtable tr th:nth-child(2) {
+    width: 100px;
 }
